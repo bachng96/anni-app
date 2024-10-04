@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/anni-app/static/css/main.a7ef370d.css",
+    "main.js": "/anni-app/static/js/main.cc43471e.js",
+    "static/js/453.573905e7.chunk.js": "/anni-app/static/js/453.573905e7.chunk.js",
+    "index.html": "/anni-app/index.html",
+    "main.a7ef370d.css.map": "/anni-app/static/css/main.a7ef370d.css.map",
+    "main.cc43471e.js.map": "/anni-app/static/js/main.cc43471e.js.map",
+    "453.573905e7.chunk.js.map": "/anni-app/static/js/453.573905e7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a7ef370d.css",
+    "static/js/main.cc43471e.js"
+  ]
+}
