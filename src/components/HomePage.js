@@ -1,6 +1,8 @@
 // src/MainPage.js
 import React, { useEffect, useState } from 'react';
-import '../styles/MainPage.css'; // Import your CSS file
+import '../styles/HomePage.css';
+import tomImg from '../assets/images/tom.jpg';
+import loitImg from '../assets/images/loit.jpg';
 
 const MainPage = () => {
   const yourDate = new Date("2023-10-07");
@@ -50,14 +52,14 @@ const MainPage = () => {
       </div>
       <div id="info">
         <div className="one">
-          <img src="img/main.jpg" className="avt" alt="" />
+          <img src={loitImg} className="avt" alt="" />
           <p>Bách</p>
         </div>
         <div id="heart">
           ❤<anni>{(yourDate.getDate() > 9) ? yourDate.getDate() : "0" + yourDate.getDate()}-{(yourDate.getMonth() > 8) ? (yourDate.getMonth() + 1) : "0" + (yourDate.getMonth() + 1)}-{yourDate.getFullYear()}</anni>
         </div>
         <div className="two">
-          <img src="img/main2.jpg" className="avt" alt="Đặng Thị B" />
+          <img src={tomImg} className="avt" alt="" />
           <p>Tom chiến tướng liên quân</p>
         </div>
       </div>

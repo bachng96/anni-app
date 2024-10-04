@@ -1,38 +1,67 @@
+/* src/App.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+}
+
 .App {
-  text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* MenuBar Styles */
+.menu-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent */
+  z-index: 10; /* Ensure menu bar is above the animation */
 }
 
-.App-link {
-  color: #61dafb;
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu-bar li {
+  font-size: 1.2rem;
 }
+
+.menu-bar a {
+  text-decoration: none;
+  color: #ec407a;
+}
+
+/* Page content */
+.page-content {
+  text-align: center;
+  padding: 3rem;
+  position: relative;
+  z-index: 1; /* Ensure content is above the animation */
+  color: #fff;
+}
+
+.heart-container canvas {
+  background-color: transparent !important; /* Ensure no background color */
+}
+
+/* Add a light pink background */
+.page-content {
+  background-color: rgba(255, 192, 203, 0.8); /* Light pink with transparency */
+  border-radius: 15px;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 4rem auto;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Slight shadow for better contrast */
+  backdrop-filter: blur(10px); /* Add blur effect to background for better visibility */
+  color: #333; /* Darker text for contrast */
+  transition: opacity 2s ease; /* Slow fade-in effect */
+  opacity: 1;
+}
+

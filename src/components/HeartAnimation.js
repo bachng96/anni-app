@@ -1,9 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "../styles/HeartAnimation.css";
-import MainPage from "./MainPage";
 
 const HeartAnimation = () => {
-  const [showAnimation, setShowAnimation] = useState(true);
 
   useEffect(() => {
     const initAnimation = () => {
@@ -124,23 +122,13 @@ const HeartAnimation = () => {
         window.requestAnimationFrame(loop);
       };
 
-      loop();
+      window.requestAnimationFrame(loop);
     };
 
     initAnimation();
-
-    const timer = setTimeout(() => {
-      setShowAnimation(false);
-    }, 10000);
-
-    return () => clearTimeout(timer);
   }, []);
 
-  if (showAnimation) {
-    return <canvas id="heart"></canvas>;
-  }
-
-  return <MainPage />;
+  return <canvas id="heart" className="heart-container"></canvas>;
 };
 
 export default HeartAnimation;
