@@ -63,12 +63,12 @@ const MainPage = () => {
           <p>Tom chiến tướng liên quân</p>
         </div>
       </div>
-      <div id="music">
+      {/* <div id="music">
         <audio loop autoPlay controls>
           <source src={musicSrc} type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
-      </div>
+      </div> */}
       <footer>Thank you for your love 💕</footer>
     </div>
   );
