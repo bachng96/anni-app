@@ -1,0 +1,108 @@
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+  }
+  
+  h1 {
+    font-weight: lighter;
+    text-align: center;
+    color: #ec407a;
+  }
+  
+  #clock-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F8C8C8;
+    padding: 1rem;
+    font-size: 2.4rem;
+    border-radius: 50px;
+    margin: 1rem 0;
+  }
+  
+  #clock {
+    text-align: center;
+  }
+  
+  date, time {
+    display: block;
+  }
+  
+  date {
+    font-size: 18px;
+  }
+  
+  time {
+    font-family: "Arial", sans-serif;
+    line-height: 3.2rem;
+    letter-spacing: 2px;
+  }
+  
+  #info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+  }
+  
+  .avt {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 8px rgba(0,0,0,.2);
+  }
+  
+  #heart {
+    font-size: 44px;
+    color: #b90d46;
+    text-align: center;
+  }
+  
+  anni {
+    font-size: 16px;
+    letter-spacing: 0.2px;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    margin-top: 1.2rem;
+  }
+  
+  #music {
+    opacity: .4;
+  }
+  
+  #mask {
+    background-image: linear-gradient(to top, #6d44cc5d 0%, #f09cd880 100%);
+    opacity: .42;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  @media (max-width: 992px) {
+    #clock-box {
+      width: 90%;
+    }
+  
+    .avt {
+      width: 120px;
+      height: 120px;
+    }
+  
+    footer {
+      font-size: 1.2rem;
+      margin: 0;
+      padding-bottom: 2rem;
+    }
+  }
+  
